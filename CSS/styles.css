@@ -1,48 +1,81 @@
-body {
+* {
   margin: 0;
-  text-align: center;
-  font-family: 'Merriweather', serif;
+  padding: 0;
 }
 
+body {
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+}
+
+/* HEADER Styling*/
+header * {
+}
+
+header {
+  height: 100px;
+  background-color: #e4f9f5;
+}
+
+.header-container {
+  width: 1000px;
+  height: 90px;
+  -border: 1px solid red;
+  margin: 0 auto;
+}
+
+.header-container img {
+  width: 80px;
+  float: left;
+  margin-top: 10px;
+}
+
+a {
+  color: #11999e;
+  text-decoration: none;
+  margin: 36px 10px 0 10px;
+  float: right;
+}
+
+a:hover {
+  color: #3e5a54;
+}
+
+/* TOP CONTAINER Styling*/
+
 h1 {
-  color: #66BFBF;
+  color: #66bfbf;
   font-size: 5em;
-  font-family: 'Sacramento', cursive;
-  margin: 50px auto 0px auto;
+  font-family: "Sacramento", cursive;
+  padding: 50px auto 0px auto;
 }
 
 h2 {
-  color: #66BFBF;
+  color: #66bfbf;
   font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   margin-top: 0px;
 }
 
 h3 {
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
 }
 
-a {
-  color: #11999E;
-  text-decoration: none;
-  margin: 10px 20px;
-}
-
-a:hover {
-  color: #EAF6F6;
-}
-
-p{
+p {
   line-height: 2;
-
 }
 
 #top-cloud {
   position: absolute;
   right: 400px;
-  top: 50px;
+  top: 85px;
 }
 
 #bottom-cloud {
@@ -56,22 +89,42 @@ p{
   top: 35px;
 }
 
-#my-photo{
+/* MIDDLE CONTAINER Styling*/
+.middle-container {
+  margin: 100px auto;
+}
+
+#my-photo {
+  width: 250px;
   border-radius: 100%;
 }
 
-.top-container {
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
+.profile h2 {
+  margin-top: 20px;
 }
 
-.skill-row{
+.profile p {
+  margin: 0px auto 40px auto;
+  width: 30%;
+  color: #40514e;
+  font-size: 1.3em;
+}
+hr {
+  width: 5%;
+  border: 6px dotted;
+  border-bottom: none;
+  color: #0199ae;
+  margin: 100px auto;
+}
+
+/* MY SKILLS 1 Styling*/
+.skill-row {
   width: 50%;
   margin: 100px auto;
   text-align: left;
 }
-.computer-img{
+
+.computer-img {
   width: 25%;
   border-radius: 100%;
   float: left;
@@ -84,52 +137,92 @@ p{
   margin-left: 30px;
 }
 
-.profile h2{
-  margin-top: 20px;
-}
-
-.profile p{
-  margin: 0px auto 40px auto;
-  width: 30%;
-  color: #40514E;
-  font-size: 1.3em;
-}
-
-hr{
-  width: 5%;
-  border: 6px dotted;
-  border-bottom: none;
-  color: #0199ae;
-  margin: 100px auto;
-}
-
-.skills h2{
+.skills h2 {
   margin-top: 50px;
-  color: #66BFBF;
+  color: #1e836c;
+  line-height: 1.1;
 }
 
+/* My Skills 2 Container*/
 
-.middle-container {
-  margin: 100px auto;
+.my-skills div {
+  -border: 1px solid yellowgreen;
+}
+.my-skills {
+  -height: 600px;
+  font-size: 16px;
 }
 
-.contact-me p{
+.skills-container {
+  width: 840px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.skills-container ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.my-skills h2 {
+  margin: 40px auto;
+}
+
+.skills-container li {
+  padding: 15px 0;
+}
+
+.left-column {
+  float: left;
+  width: 400px;
+}
+
+.right-column {
+  float: right;
+  width: 400px;
+  margin-left: 50px;
+}
+
+.skill-name {
+  float: left;
+  margin-top: 5px;
+}
+
+.skill-degree {
+  float: right;
+}
+
+.star-full {
+  color: #22a39f;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.star-empty {
+  color: #dfe0e0;
+  font-size: 20px;
+}
+
+/*CONTACT Styling */
+.contact-me p {
   margin: 40px auto 60px;
-
 }
 
 .bottom-container {
-  background-color: #66BFBF;
+  background-color: #66bfbf;
   padding: 50px 0px 20px;
 }
 
 .copyright {
-  color: #EAF6F6;
+  color: #eaf6f6;
   font-size: 0.75rem;
   padding-top: 10px;
 }
 
+/*
 .btn {
+  margin: auto;
   background: #56a8de;
   background-image: -webkit-linear-gradient(top, #56a8de, #3997d1);
   background-image: -moz-linear-gradient(top, #56a8de, #3997d1);
@@ -154,4 +247,4 @@ hr{
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
+}*/
