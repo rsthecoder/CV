@@ -14,9 +14,6 @@ body {
 }
 
 /* HEADER Styling*/
-header * {
-}
-
 header {
   height: 100px;
   background-color: #e4f9f5;
@@ -145,11 +142,7 @@ hr {
 
 /* My Skills 2 Container*/
 
-.my-skills div {
-  -border: 1px solid yellowgreen;
-}
-.my-skills {
-  -height: 600px;
+.my-skills {  
   font-size: 16px;
 }
 
